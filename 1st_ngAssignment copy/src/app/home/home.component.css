@@ -1,0 +1,14 @@
+figure{
+  width: 250px;
+  margin: auto;
+}
+
+h2{
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+
+figcaption span:not(figcaption span:last-child)::after{
+  content: " - ";
+}

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --mainColor: #19bc9c;
+  --secondaryColor: #2C3F51;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
+}
+#home, #about{
+  background-color: var(--mainColor);
+  color: white;
+  text-align: center;
+}
+.welcomeMess{
+  width: 250px;
+  margin: auto;
+}
+#portfolio .welcomeMess::after, #portfolio .welcomeMess::before, #contact .welcomeMess::after, #contact .welcomeMess::before{
+  background-color: var(--secondaryColor);
+}
+#portfolio h2, #contact h2{
+  color: var(--secondaryColor);
+}
+.welcomeMess::after,.welcomeMess::before{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: calc(45% - 17px);
+  background-color: white;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.welcomeMess::after{
+  left: 0;
+}
+.welcomeMess i{
+  padding: .5rem;
+}

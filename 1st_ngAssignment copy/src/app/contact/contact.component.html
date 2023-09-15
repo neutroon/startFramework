@@ -1,0 +1,27 @@
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="container text-center">
+      <h2 class="text-uppercase pt-5 mt-5 fs-1">contact component</h2>
+      <div class="welcomeMess mb-3 position-relative">
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+
+    <form class="m-auto pt-5 mt-5 w-50">
+
+      <div *ngFor="let input of inputs; let i = index">
+        <input (keyup)="test($event)" type="text" [placeholder]="input" class="p-3 mb-1 rounded-3 border-0 w-100 border-bottom">
+        <label class="position-relative w-100" > {{input}} :</label>
+      </div>
+
+
+      <!-- <label class="position-relative top-0" [class.changTop] = yes > Age :</label>
+      <input (keyup)="test($event)" type="text" placeholder="Age" class="p-3 mb-1 rounded-3 border-0 border-bottom">
+      <label class="position-relative top-0" [class.changTop] = yes > Email :</label>
+      <input (keyup)="test($event)" type="text" placeholder="Email" class="p-3 mb-1 rounded-3 border-0 border-bottom">
+      <label class="position-relative top-0" [class.changTop] = yes > Password :</label>
+      <input (keyup)="test($event)" type="password" placeholder="Password" class="p-3 mb-1 rounded-3 border-0 border-bottom"> -->
+      <button class="btn" type="button">Send Message</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<section id="portfolio" class="py-5 overflow-x-hidden">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="text-uppercase pt-5 mt-5 fs-1">portfolio component</h2>
+      <div class="welcomeMess mb-3 position-relative">
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-4" *ngFor="let img of imgs; let i = index">
+        <figure (click)="toggleGallery(i,$event)" class="position-relative">
+          <img [src]="img" class="w-100 rounded-3" alt="poert">
+          <div class="layer d-flex rounded-3 justify-content-center align-items-center">
+            <i class="fa fa-plus fa-5x text-white"></i>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <div (click)="toggleGallery(undefined, $event)" class="gallery position-fixed top-0 bottom-0 start-0 end-0 bg-opacity-25 bg-primary" [class.d-none]="toggle">
+      <figure class="h-100 d-flex justify-content-center align-items-center" >
+        <img id="gallImg" [src]="imgSrc" alt="poert">
+      </figure>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+.active{
+  background-color: var(--mainColor);
+
+}
+nav{
+  background-color: var(--secondaryColor);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: padding ease .6s;
+}
+nav a{
+  color: white;
+  font-weight: 700;
+}
+nav a.navbar-brand{
+  font-size: 2rem;
+}
+
+a,h2{
+  font-weight: 700;
+}
+nav .nav-item{
+  width: fit-content;
+
+}
+nav .nav-item a{
+  padding-left: .3rem;
+  padding-right: .3rem;
+}

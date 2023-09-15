@@ -1,0 +1,25 @@
+form button{
+  width: fit-content;
+  background-color: var(--mainColor);
+  color: white;
+}
+input:focus{
+  outline: none
+}
+button:active{
+  border-color: white;
+  background-color: var(--mainColor) !important;
+  color: white !important;
+}
+/* .changTop{
+  top: -95px !important;
+  background-color: red;
+} */
+label.position-relative{
+  top: -50px ;
+  left: 10px;
+  color: var(--mainColor);
+  transition: top ease-in-out .5s;
+  z-index: -1;
+}
+
